@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :total, :discount, :items, :price, :item_price
+  attr_accessor :total, :discount, :items, :price, :last
 
   def initialize(discount = 0)
    @total = 0
@@ -35,9 +35,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    item_price.reverse.each do |i|
-    @total -= item_price[i]
-    end
+    self.
     
      
   end
